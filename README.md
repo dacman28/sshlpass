@@ -5,6 +5,10 @@ This script allows you to access your stored passwords in lastpass in ssh. The k
 
 Simply install the script and make a sym link into a bin file (or edit your bashrc file).
 
+To use simply call the script eg $ sshlpass <servername>
+
 This script requires sshpass and lpass cli (LastPass' command line tool)
 
 Future Versions will include checks and instructions on installing lpass and sshpass.
+
+
