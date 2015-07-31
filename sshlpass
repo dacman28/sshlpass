@@ -1,0 +1,11 @@
+#!/bin/bash
+
+lpass sync
+
+if [ $? == 1 ]; then
+    echo "You need to login to lastpass";
+    
+else
+    sshpass -p $(lpass show --password $1) ssh $(lpass show --username $1)@$1
+fi
+
